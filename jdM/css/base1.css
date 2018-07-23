@@ -1,0 +1,45 @@
+*,
+::before,
+::after{
+    margin: 0;
+    padding: 0;
+    
+}
+
+body {
+    color: rgb(0, 0, 0);
+    font-family: "Microsoft YaHei",sans-serif!important;
+    background-color:#f5f5f5!important;
+}
+div{
+    background: #fff;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+ul{
+    list-style: none;
+}
+input,textarea{
+    border: none;
+    resize: none;
+    outline: none;
+
+    -webkit-appearance: none;
+}
+/* 清除浮动 */
+.clearfix::before,
+.clearfix::after{
+        content: ".";
+        display: block;
+        height: 0;
+        line-height: 0;
+        visibility: hidden;
+        clear: both;
+    }
+[class^="icon"],
+[class*=" icon"]{
+    background: url("../images/sprites.png") no-repeat;
+    background-size: 200px 200px;
+}
